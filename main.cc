@@ -12,8 +12,6 @@ int main() {
 
     for(vector<int*>::iterator it = vi.begin(); it != vi.end();) {
         if(*(*it) % 2 == 0) {
-            //int* toDelete = (*it);
-            //delete toDelete;
             delete (*it);
             vi.erase(it);
         } else {
